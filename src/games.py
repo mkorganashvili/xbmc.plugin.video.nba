@@ -103,7 +103,7 @@ def getGameUrl(video_id, video_type, video_ishomefeed, start_time, duration):
 
         log("live cookie: %s %s" % (querystring, livecookies), xbmc.LOGDEBUG)
 
-        url = "%s://%s/%s?%s" % (protocol, domain, arguments, querystring)
+        url = "%s://%s/%s" % (protocol, domain, arguments)
         url = getGameUrlWithBitrate(url, video_type)
 
         selected_video_url = "%s&Cookie=%s" % (url, livecookiesencoded)

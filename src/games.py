@@ -29,8 +29,7 @@ def getGameUrl(video_id, video_type, video_ishomefeed, start_time, duration):
     headers = {
         'Cookie': vars.cookies,
         'Content-Type': 'application/x-www-form-urlencoded',
-        'User-Agent': 'android' if video_type == "live"
-            else "Dalvik/2.1.0 (Linux; U; Android 6.0.1; Nexus 5 Build/M4B30Z) android mobile nba 8.1215",
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'
     }
     body = {
         'extid': str(video_id),
